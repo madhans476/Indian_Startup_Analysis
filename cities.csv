@@ -1,61 +1,81 @@
-,city,lat,lon
-0,Bengaluru,12.9767463,77.5752782
-1,Gurugram,28.4665886,77.0333116
-2,NewDelhi,28.6324252,77.218791
-3,Mumbai,18.9690472,72.8211807
-4,Chennai,13.0720922,80.2018554
-5,Pune,18.51957,73.85535
-6,Noida,28.5846687,77.3520063
-7,Faridabad,28.4148834,77.30969
-8,Amritsar,31.62234,74.87534
-9,Delhi,28.6324252,77.218791
-10,Kormangala,13.291864,77.751814
-11,Taramani,12.98568,80.23558
-12,Andheri,19.1121216,72.8676758
-13,Chembur,19.0487802,72.90587
-14,Haryana,29.198193685947,76.340238451027
-15,Karnataka,14.710486244865,76.167642312362
-16,Mumbai/Bengaluru,19.162627,72.845772
-17,Bhopal,23.25469,77.40289
-18,BengaluruandGurugram,12.9476009,77.6287401
-19,India/Singapore,22.927235,74.064717
-20,Jaipur,26.9210387,75.7943593
-21,Nagpur,21.14631,79.08491
-22,Indore,22.7186729,75.8557106
-23,"NewYork,Bengaluru",12.9065992,77.6424604
-24,India,23.379379735,79.443326548
-25,Rourkela,22.22496,84.86414
-26,Srinagar,34.0717455,74.8043213
-27,Bhubaneswar,20.2726082,85.8331178
-28,Chandigarh,30.7333502,76.7790361
-29,Kolkata,22.5655734,88.3702152
-30,Coimbatore,11.0160093,76.9703096
-31,Udaipur,24.5761142,73.7005006
-32,Ahmedabad,23.0145096,72.5917595
-33,Surat,21.2035093,72.8392268
-34,UttarPradesh,26.923284879151,80.566172731662
-35,Gaya,24.7924837,85.0077092
-36,Vadodara,22.3111948,73.1819832
-37,Trivandrum,8.5303733,76.9295569
-38,Mussoorie,30.4585,78.0653
-39,Panaji,15.4833398,73.8223346
-40,Gwalior,26.2145606,78.1827078
-41,Karur,10.9595769,78.0819485
-42,Udupi,13.343725,74.7466438
-43,Kochi,9.9576168,76.2511512
-44,Agra,27.1677246,78.0358887
-45,Hubli,15.34776,75.13378
-46,Kerala,10.450097154692,76.408118405571
-47,Kozhikode,11.2341272,75.795501
-48,Siliguri,26.7096309,88.4286167
-49,Lucknow,26.8462595,80.9490001
-50,Kanpur,26.46523,80.34975
-51,Varanasi,25.3096924,83.0056763
-52,Jodhpur,26.283341,73.021858
-53,Mumbai/NY,18.9690472,72.8211807
-54,Goa/Hyderabad,15.540127,73.764363
-55,Belgaum,15.8527648,74.5111188
-56,NewYork/India,28.703257,77.126664
-57,Gurgaon/SFO,28.4665886,77.0333116
-58,NewDelhi/Houston,28.5377359,77.2863372
-59,Mumbai/Global,19.154239,72.843707
+index,city,lat,lon,state,count
+1,Bengaluru,12.9716,77.5946,Karnataka,4
+2,Mumbai,19.076,72.8777,Maharashtra,985
+3,Kolkata,22.5726,88.3639,West Bengal,48
+4,Gurugram,28.4595,77.0266,Haryana,610
+5,Kanpur,26.4499,80.3319,Uttar Pradesh,7
+6,New Delhi,28.6139,77.209,Delhi,731
+7,Hyderabad,17.385,78.4867,Telangana,167
+8,Goa,15.2993,74.124,Goa,15
+9,Udupi,13.3392,74.748,Karnataka,2
+10,Chennai,13.0827,80.2707,Tamil Nadu,199
+11,Jaipur,26.9124,75.7873,Rajasthan,64
+12,Pune,18.5204,73.8567,Maharashtra,202
+13,Ahmedabad,23.0225,72.5714,Gujarat,69
+14,Noida,28.5355,77.391,Uttar Pradesh,174
+15,Chandigarh,30.7333,76.7794,Punjab,17
+16,Mohali,30.7046,76.7179,Punjab,2
+17,Thane,19.2183,72.9781,Maharashtra,9
+18,Patna,25.5941,85.1376,Bihar,2
+19,Mussoorie,30.4489,78.0743,Uttarakhand,1
+20,Coimbatore,11.0168,76.9558,Tamil Nadu,9
+21,Indore,22.7197,75.8573,Madhya Pradesh,29
+22,Bhubaneswar,20.2961,85.8245,Odisha,3
+23,Kannur,11.8836,75.3704,Kerala,2
+24,Faridabad,28.4082,77.3178,Haryana,6
+25,Kochi,9.9312,76.2673,Kerala,13
+26,Bhopal,23.2599,77.4126,Madhya Pradesh,8
+27,Panaji,15.4909,73.8278,Goa,2
+28,Chembur,19.0756,72.9104,Maharashtra,1
+29,Vadodara,22.3072,73.1812,Gujarat,12
+30,Bangalore,12.9716,77.5946,Karnataka,8
+31,Ghaziabad,28.6692,77.4513,Uttar Pradesh,4
+32,Nagpur,21.1458,79.0882,Maharashtra,3
+33,Warangal,17.9784,79.5941,Telangana,1
+34,Varanasi,25.3176,82.9739,Uttar Pradesh,1
+35,Dhingsara,30.4768,76.9619,Himachal Pradesh,1
+36,Haryana,29.0588,76.0856,Haryana,24
+37,Alleppey,9.4981,76.3401,Kerala,2
+38,Amritsar,31.634,74.8723,Punjab,1
+39,Kota,25.2138,75.868,Rajasthan,3
+40,Lucknow,26.8467,80.9462,Uttar Pradesh,3
+41,Kurawar,23.25,75.5,Madhya Pradesh,1
+42,Worli,19.0134,72.8352,Maharashtra,2
+43,Bengaluru,12.9716,77.5946,Karnataka,1637
+44,Belgaum,15.8489,74.5013,Karnataka,4
+45,Hubli,15.3642,75.1269,Karnataka,3
+46,Alwar,27.555,76.635,Rajasthan,2
+47,Trivandrum,8.5241,76.9366,Kerala,5
+48,Mylapore,13.0028,80.2505,Tamil Nadu,2
+50,Dehradun,30.3165,78.0322,Uttarakhand,1
+51,Kormangala,12.9348,77.6244,Karnataka,8
+52,Gwalior,26.2183,78.182,Madhya Pradesh,2
+53,Uttar Pradesh,27.1667,79.3788,Uttar Pradesh,1
+54,Andheri,19.1171,72.8463,Maharashtra,5
+55,Kerala,10.8505,76.2711,Kerala,2
+56,Udaipur,24.5714,73.6915,Rajasthan,2
+57,Srinagar,34.0839,74.7973,Jammu and Kashmir,1
+58,Jodhpur,26.2389,73,Rajasthan,7
+59,Cochin,9.9312,76.2673,Kerala,3
+60,Karur,10.9601,78.0766,Tamil Nadu,1
+61,Anand,22.5714,72.9624,Gujarat,2
+62,Guntur,16.306,80.436,Andhra Pradesh,2
+63,Kalpakkam,12.439,80.1626,Tamil Nadu,2
+64,Tirunelveli,8.73,77.7311,Tamil Nadu,1
+65,Surat,21.1702,72.8311,Gujarat,2
+66,Rourkela,22.2587,84.8828,Odisha,1
+67,Thiruvananthapuram,8.5241,76.9366,Kerala,1
+68,Gaya,24.7957,84.998,Bihar,1
+69,Ernakulam,9.9813,76.282,Kerala,2
+70,Kozhikode,11.2588,75.7804,Kerala,1
+71,Agra,27.1767,78.0081,Uttar Pradesh,2
+72,Secunderabad,17.444,78.4986,Telangana,1
+73,Siliguri,26.7273,88.595,West Bengal,3
+74,Kalkaji,28.5535,77.2532,Delhi,1
+75,Taramani,12.9911,80.249,Tamil Nadu,1
+76,Tumkur,13.3409,77.1016,Karnataka,1
+77,Kancheepuram,12.8372,79.7056,Tamil Nadu,1
+78,Guindy,13.0059,80.2219,Tamil Nadu,2
+79,Karnataka,15.3173,75.7139,Karnataka,1
+80,Azadpur,28.6727,77.1967,Delhi,2
+81,Powai,19.1125,72.8923,Maharashtra,2
