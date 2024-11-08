@@ -1,4 +1,4 @@
-# Indian Startup Analysis
+# Indian Startup Funding Analysis
 
 This project is an interactive data analysis and visualization tool developed using [Streamlit](https://streamlit.io/), aimed at exploring and understanding the Indian startup ecosystem. The dataset used in this project was collected from multiple sources and preprocessed to provide insights into various aspects of startups in India.
 
