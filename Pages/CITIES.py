@@ -107,7 +107,7 @@ col1, col2 = st.columns(2)
 with col1:
     year_wise = 'Amount Funded'
     st.subheader("Amount Funded Year Wise")
-    subtype = st.selectbox("Subtype",['Barplot','Lineplot','DataFrame'], key='loc2')
+    subtype = st.selectbox("Subtype",['Barplot','Lineplot','Treemap','DataFrame'], key='loc2')
     data = sample.groupby(by='year')['amount'].sum()
     bar_line_and_df(data, subtype, year_wise)
 
@@ -115,7 +115,7 @@ with col1:
 with col2:
     year_wise = '# Fundings'
     st.subheader("Number of Fundings Year Wise")
-    subtype = st.selectbox("SubType",['Barplot','Lineplot','DataFrame'], key='loc3')
+    subtype = st.selectbox("SubType",['Barplot','Lineplot','Treemap','DataFrame'], key='loc3')
     data = sample['year'].value_counts()
     bar_line_and_df(data, subtype, year_wise)
 
