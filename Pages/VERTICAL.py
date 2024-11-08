@@ -102,14 +102,14 @@ col1, col2 = st.columns(2)
 with col1:
     # Vertical Wise Analysis
     st.subheader("Number Of Fundings Year Wise")
-    selection = st.selectbox("Options", ['Lineplot', 'DataFrame', 'Barplot'], key='selectbox2')
+    selection = st.selectbox("Options", ['Lineplot','Treemap', 'Barplot', 'DataFrame'], key='selectbox2')
     vertical_analysis(choice, selection)
     st.write("\n")
 
 with col2:
     # Funding analysis
     st.subheader("Amount Funded Year Wise")
-    selection = st.selectbox("Options", ['Lineplot', 'DataFrame', 'Barplot'], key='selectbox1')
+    selection = st.selectbox("Options", ['Lineplot','Treemap', 'Barplot', 'DataFrame'], key='selectbox1')
     funding_analysis(choice, selection)
 
 #! -------------------------------------------------------------------------------------------------------------------
