@@ -1,6 +1,5 @@
 import streamlit as st 
 import pandas as pd 
-from io import BytesIO
 from functions import bar_line_and_df
 
 st.set_page_config(layout='wide',page_title='StartUp Funding Analysis')
@@ -74,14 +73,14 @@ col1, col2 = st.columns(2)
 with col1:
     year_wise = 'Amount Funded'
     st.subheader("Amount Funded Year Wise")
-    subtype = st.selectbox("Subtype",['Barplot','Lineplot','DataFrame'])
+    subtype = st.selectbox("Subtype",['Barplot','Lineplot','Treemap','DataFrame'])
     data = df.groupby(by='year')['amount'].sum()
     bar_line_and_df(data, subtype, year_wise)
 
 with col2:
     year_wise = '# Fundings'
     st.subheader("Number of Fundings Year Wise")
-    subtype = st.selectbox("SubType",['Barplot','Lineplot','DataFrame'])
+    subtype = st.selectbox("SubType",['Barplot','Lineplot','Treemap','DataFrame'])
     data = df[df['amount'] > 0]
     data = data['year'].value_counts()
     bar_line_and_df(data, subtype, year_wise)
