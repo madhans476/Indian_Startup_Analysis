@@ -1,6 +1,6 @@
 import streamlit as st 
 import altair as alt
-
+import plotly.express as px
 
 color1 = 'Orange'
 color2 = 'Blue'
@@ -106,6 +106,29 @@ def bar_line_and_df(data, subtype, year_wise, ht = 350, bs = 35):
 
         # Display the chart in Streamlit
         st.altair_chart(final_chart, use_container_width=True)
+
+    elif subtype == 'Treemap':
+        fig = px.treemap(
+            data,
+            path=['Year'],
+            values=s,
+        )
+
+        # Customize hover interaction
+        fig.update_traces(
+            hovertemplate='<b>Year:</b> %{label}<br><b>' + s + ':</b> %{value:.0f}<extra></extra>',
+            hoverlabel=dict(bgcolor="black", font=dict(color="white"))  # Hover label background color
+        )
+        
+        # Layout adjustments for Streamlit
+        fig.update_layout(
+            margin=dict(t=10, l=0, r=0, b=20),
+            height=ht,
+            hovermode='closest'
+        )
+
+        # Display in Streamlit
+        st.plotly_chart(fig, use_container_width=True)
     else:            
         data['Year'] = data['Year'].astype(str)
         st.write('Data Overview:')
